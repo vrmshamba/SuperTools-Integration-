@@ -14,7 +14,7 @@ const Home = () => {
             <li><a href="/submit">Submit</a></li>
             <li><a href="https://susanngatia.africa/sponsor">Sponsor</a></li>
           </ul>
-          <a href="https://www.susanngatia.africa/subscribe">
+          <a href="https://susanngatia.africa/subscribe">
             <div>Join for Free</div>
           </a>
           {/* Search icon will be added here */}
