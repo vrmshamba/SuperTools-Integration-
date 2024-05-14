@@ -51,7 +51,7 @@ const Home = () => {
       <footer>
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms-conditions">Terms & Conditions</a>
-        // Footer indicating ownership by susanngatia.africa
+        // Updated site ownership to susanngatia.africa
         <p>© 2024 susanngatia.africa. All rights reserved.</p>
         <a href="https://twitter.com/susanngatia">
           <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c0 4.943 .159 9.83 .464 14.675C459.864 250.9 402.2 303.8 328 319.8c-51.2 11.1-105.7 4.2-149.9-19.6 13.6 1.6 27.6 2.5 41.6 2.5 24.1 0 47.2-3.9 68.7-11.1-50.6-10.1-88.9-54.5-88.9-107.7v-1.4c14.9 8.3 32 13.3 50.2 13.9-29.6-19.8-49-53.6-49-91.9 0-20.3 5.4-39.3 14.9-55.7 54.4 66.8 135.7 110.6 227.4 115.2-1.9-8.1-2.9-16.5-2.9-25.1 0-60.7 49.1-110 110-110 31.7 0 60.3 13.4 80.3 34.9 25.1-4.9 48.7-14.1 70-26.8-8.3 25.9-25.9 47.6-48.8 61.3 22.3-2.7 43.6-8.6 63.4-17.4-14.8 22.1-33.4 41.6-54.9 57.1z"></path></svg>
