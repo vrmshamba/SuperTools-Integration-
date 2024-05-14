@@ -10,9 +10,9 @@ const Home = () => {
             <li><a href="/gpts">GPTs</a></li>
             <li><a href="/top-picks">Top Picks</a></li>
             <li><a href="/submit">Submit</a></li>
-            <li><a href="https://therundownai.typeform.com/to/kraZ1TSO">Sponsor</a></li>
+            <li><a href="https://susanngatia.africa/sponsor">Sponsor</a></li>
           </ul>
-          <a href="https://www.therundown.ai/subscribe?utm_source=supertools-header">
+          <a href="https://susanngatia.africa/join">
             <div>Join for Free</div>
           </a>
           {/* Search icon will be added here */}
