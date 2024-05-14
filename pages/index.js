@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Trivial change to trigger GitHub Pages deployment
+// Trivial change to trigger GitHub Pages redeployment
 
 const Home = () => {
   return (
