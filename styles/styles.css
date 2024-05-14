@@ -1,0 +1,120 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Set some default font properties */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f7f7f7; /* Light grey background */
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #101010; /* Darker shade for the navbar */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  padding: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Style the main content */
+main {
+  padding: 2rem;
+  max-width: 1200px; /* Max width for the main content */
+  margin: 0 auto; /* Center the main content */
+  background-color: #1a1a1a; /* Dark background for the main content area */
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger font size for the headline */
+  color: #fff; /* Light text for the headline */
+  font-weight: bold; /* Bold font for impact */
+  margin-bottom: 1rem; /* Spacing after the headline */
+}
+
+p {
+  color: #ccc; /* Lighter text for the description */
+  margin-bottom: 1rem; /* Spacing after paragraphs */
+}
+
+h3 {
+  font-size: 1.2rem; /* Smaller font size for subheadings */
+  color: #aaa; /* Lighter text for subheadings */
+  margin-bottom: 1rem; /* Spacing after subheadings */
+}
+
+/* Style the email subscription form */
+form {
+  margin-bottom: 2rem; /* Spacing after the form */
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  margin-right: 0.5rem; /* Spacing between the input field and the button */
+  border: 1px solid #333; /* Border for the input field */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Bootstrap primary color for the button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Style the footer */
+footer {
+  background-color: #101010; /* Darker shade for the footer */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Responsive design features */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    padding: 0.5rem 0; /* Less padding for smaller screens */
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+}
