@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Trivial change to trigger GitHub Pages deployment
+
 const Home = () => {
   return (
     <div>
