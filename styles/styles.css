@@ -43,6 +43,9 @@ main {
   max-width: 1200px; /* Max width for the main content */
   margin: 0 auto; /* Center the main content */
   background: linear-gradient(to right, #1a1a1a, #414141); /* Gradient background for the main content area */
+  z-index: 10; /* Ensure the main content is above other elements */
+  overflow: visible; /* Ensure all content is visible */
+  position: relative; /* Ensure the content is positioned correctly */
 }
 
 h1 {
@@ -89,40 +92,48 @@ h3 {
   background-color: #0056b3; /* Darker shade on hover for category tags */
 }
 
-/* Style the form on the Submit page */
+/* Style the email subscription form */
 form {
   margin-bottom: 2rem; /* Spacing after the form */
+  background-color: #252525; /* Dark background for the form */
+  padding: 1rem; /* Padding around the form elements */
+  border-radius: 0.5rem; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
 form label {
   display: block;
   margin-bottom: .5rem;
-  color: #ccc;
+  color: #ccc; /* Lighter color for the label */
+  font-size: 1rem; /* Readable font size for the label */
 }
 
-form input[type="text"],
-form input[type="url"],
-form textarea {
+form input[type="email"] {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #333; /* Dark border for the input field */
+  background-color: #1a1a1a; /* Dark background for the input field */
+  color: #fff; /* White text for input */
   border-radius: 0.3rem;
 }
 
 form button {
   padding: 0.5rem 1rem;
-  background-color: #007bff; /* Primary color for the button */
+  background-color: #ff9800; /* Orange color for the button */
   color: #fff;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
   display: block; /* Make the button take the full width */
   width: 100%;
+  font-weight: bold; /* Bold font for the button text */
+  text-transform: uppercase; /* Uppercase text for the button */
+  letter-spacing: 1px; /* Spacing between letters for better readability */
 }
 
 form button:hover {
-  background-color: #ff5722; /* Darker orange shade on hover for the button */
+  background-color: #e68a00; /* Slightly darker shade on hover for the button */
   transform: scale(1.05); /* Slight increase in size on hover for feedback */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
 }
