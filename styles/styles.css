@@ -42,19 +42,29 @@ main {
   padding: 2rem;
   max-width: 1200px; /* Max width for the main content */
   margin: 0 auto; /* Center the main content */
-  background-color: #1a1a1a; /* Dark background for the main content area */
+  background: linear-gradient(to right, #1a1a1a, #414141); /* Gradient background for the main content area */
 }
 
 h1 {
-  font-size: 2.5rem; /* Larger font size for the headline */
-  color: #fff; /* Light text for the headline */
+  font-size: 3rem; /* Increased font size for the headline */
+  color: #ff9800; /* Orange color for the headline for a pop of color */
   font-weight: bold; /* Bold font for impact */
   margin-bottom: 1rem; /* Spacing after the headline */
+  text-transform: uppercase; /* Uppercase styling for a more dynamic look */
+  text-shadow: 2px 2px 4px #000000; /* Text shadow for depth */
 }
 
 p {
-  color: #ccc; /* Lighter text for the description */
+  color: #ddd; /* Lighter text for the description for better readability */
   margin-bottom: 1rem; /* Spacing after paragraphs */
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  line-height: 1.4; /* Increased line height for better text flow */
+}
+
+h2 {
+  font-size: 1.5rem; /* Font size for category headings */
+  color: #fff; /* White text for category headings */
+  margin-bottom: 0.5rem; /* Spacing after category headings */
 }
 
 h3 {
@@ -63,27 +73,58 @@ h3 {
   margin-bottom: 1rem; /* Spacing after subheadings */
 }
 
-/* Style the email subscription form */
+/* Style the category tags */
+.category-tag {
+  display: inline-block;
+  background-color: #007bff; /* Bootstrap primary color for category tags */
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.category-tag:hover {
+  background-color: #0056b3; /* Darker shade on hover for category tags */
+}
+
+/* Style the form on the Submit page */
 form {
   margin-bottom: 2rem; /* Spacing after the form */
 }
 
-input[type="email"] {
-  padding: 0.5rem;
-  margin-right: 0.5rem; /* Spacing between the input field and the button */
-  border: 1px solid #333; /* Border for the input field */
+form label {
+  display: block;
+  margin-bottom: .5rem;
+  color: #ccc;
 }
 
-button {
+form input[type="text"],
+form input[type="url"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+form button {
   padding: 0.5rem 1rem;
-  background-color: #007bff; /* Bootstrap primary color for the button */
+  background-color: #007bff; /* Primary color for the button */
   color: #fff;
   border: none;
+  border-radius: 0.3rem;
   cursor: pointer;
+  display: block; /* Make the button take the full width */
+  width: 100%;
 }
 
-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+form button:hover {
+  background-color: #ff5722; /* Darker orange shade on hover for the button */
+  transform: scale(1.05); /* Slight increase in size on hover for feedback */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Style the footer */
@@ -117,4 +158,32 @@ footer a {
   h1 {
     font-size: 2rem; /* Smaller font size for smaller screens */
   }
+}
+
+/* Top Picks Page Styles */
+.top-picks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.top-pick-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.top-pick-card h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.top-pick-card p {
+  color: #666;
+}
+
+/* Update the footer links to match the new ownership */
+footer p {
+  color: #ccc; /* Lighter text for the footer */
 }
