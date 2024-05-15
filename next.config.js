@@ -20,5 +20,5 @@ module.exports = {
   },
   // Additional Next.js configuration options can be added here as needed
   // Configure static HTML export
-  output: 'standalone',
+  output: 'export',
 };
