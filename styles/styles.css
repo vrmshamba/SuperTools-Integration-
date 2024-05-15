@@ -152,6 +152,20 @@ footer a {
   padding: 0.5rem;
 }
 
+footer a.social-icon {
+  display: inline-block;
+  margin-right: 0.5rem; /* Space out icons */
+  font-size: 1.5rem; /* Icon size */
+}
+
+footer a.twitter-icon:before {
+  content: "\f099"; /* Font Awesome Twitter icon */
+}
+
+footer a.linkedin-icon:before {
+  content: "\f0e1"; /* Font Awesome LinkedIn icon */
+}
+
 /* Responsive design features */
 @media (max-width: 768px) {
   nav ul {
