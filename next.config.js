@@ -8,6 +8,9 @@ module.exports = {
   ) {
     return {
       '/': { page: '/' },
+      '/gpts': { page: '/gpts' },
+      '/top-picks': { page: '/top-picks' },
+      '/submit': { page: '/submit' },
       // Define additional paths based on the pages present in the cloned website
     };
   },
