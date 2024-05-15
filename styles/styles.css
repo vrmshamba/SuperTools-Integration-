@@ -79,17 +79,18 @@ h3 {
 /* Style the category tags */
 .category-tag {
   display: inline-block;
-  background-color: #007bff; /* Bootstrap primary color for category tags */
+  background-color: #4CAF50; /* New distinct background color for category tags */
   color: #fff;
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 1rem; /* Increased padding for a more button-like appearance */
   margin: 0.2rem;
   border-radius: 0.3rem;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .category-tag:hover {
-  background-color: #0056b3; /* Darker shade on hover for category tags */
+  background-color: #388E3C; /* Darker shade on hover for category tags */
 }
 
 /* Style the email subscription form */
@@ -154,8 +155,15 @@ footer a {
 
 footer a.social-icon {
   display: inline-block;
-  margin-right: 0.5rem; /* Space out icons */
-  font-size: 1.5rem; /* Icon size */
+  margin-right: 0.5rem;
+  font-size: 1.5rem; /* Adjusted font size for social icons */
+  width: 24px; /* Fixed width for social icons */
+  height: 24px; /* Fixed height for social icons */
+  line-height: 1.5em; /* Adjusted line height for vertical alignment */
+  text-align: center; /* Center the icon */
+  color: #fff; /* Set icon color to white */
+  overflow: hidden; /* Hide overflow to prevent layout issues */
+  background-size: 24px 24px; /* Ensure the background image fits the container */
 }
 
 footer a.twitter-icon:before {
