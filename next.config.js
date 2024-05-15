@@ -19,4 +19,6 @@ module.exports = {
     domains: ['supertools.therundown.ai'],
   },
   // Additional Next.js configuration options can be added here as needed
+  // Configure static HTML export
+  output: 'standalone',
 };
