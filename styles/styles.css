@@ -168,10 +168,12 @@ footer a.social-icon {
 
 footer a.twitter-icon:before {
   content: "\f099"; /* Font Awesome Twitter icon */
+  font-size: 1.5rem; /* Adjusted font size for Twitter icon */
 }
 
 footer a.linkedin-icon:before {
   content: "\f0e1"; /* Font Awesome LinkedIn icon */
+  font-size: 1.5rem; /* Adjusted font size for LinkedIn icon */
 }
 
 /* Responsive design features */
