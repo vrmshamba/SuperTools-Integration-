@@ -222,3 +222,11 @@ footer a.linkedin-icon:before {
 footer p {
   color: #ccc; /* Lighter text for the footer */
 }
+
+/* Ensure all SVG elements are not oversized and scale properly within their containers */
+svg {
+  max-width: 100%; /* Max width should not exceed the width of the container */
+  max-height: 100%; /* Max height should not exceed the height of the container */
+  width: 100%; /* Width should scale based on the viewBox attribute */
+  height: auto; /* Height should scale proportionally */
+}
