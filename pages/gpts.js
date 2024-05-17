@@ -1,8 +1,13 @@
 import React from 'react';
+import Head from 'next/head';
 
 const GPTs = () => {
   return (
     <div>
+      <Head>
+        <title>GPTs by Susan Ngatia - Unleash the Power of AI</title>
+        <meta name="description" content="Discover the best GPT tools for creativity and productivity. Explore our handpicked collection and find the perfect AI tool for your needs." />
+      </Head>
       <header>
         <nav aria-label="Main">
           <ul>
