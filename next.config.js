@@ -20,4 +20,6 @@ module.exports = {
     unoptimized: true, // Disable the image optimization API
   },
   // Additional Next.js configuration options can be added here as needed
+  // Configure static HTML export
+  output: 'standalone',
 };
