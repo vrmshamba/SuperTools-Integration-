@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const Home = () => {
@@ -8,21 +9,21 @@ const Home = () => {
   // Updated data for the tools array with actual image paths
   const tools = [
     {
-      image: '/ai-tool-1.jpg',
-      name: 'AI Tool 1',
-      description: 'AI Tool 1 is a powerful solution for automating tasks.'
+      image: '/path-to-actual-tool-image-1.jpg',
+      name: 'Actual AI Tool Name 1',
+      description: 'Description of what Actual AI Tool 1 does and its benefits.'
     },
     {
-      image: '/ai-tool-2.jpg',
-      name: 'AI Tool 2',
-      description: 'AI Tool 2 offers advanced analytics and data processing.'
+      image: '/path-to-actual-tool-image-2.jpg',
+      name: 'Actual AI Tool Name 2',
+      description: 'Description of what Actual AI Tool 2 does and its benefits.'
     },
     {
-      image: '/ai-tool-3.jpg',
-      name: 'AI Tool 3',
-      description: 'AI Tool 3 simplifies machine learning model training.'
+      image: '/path-to-actual-tool-image-3.jpg',
+      name: 'Actual AI Tool Name 3',
+      description: 'Description of what Actual AI Tool 3 does and its benefits.'
     },
-    // More tool objects will be added here
+    // Additional tool objects with actual data will be added here
   ];
 
   return (
@@ -54,7 +55,7 @@ const Home = () => {
             {/* Tool cards will be dynamically generated from a list of tools */}
             {tools.map((tool, index) => (
               <div key={index} className="top-pick-card">
-                <img src={tool.image} alt={tool.name} />
+                <Image src={tool.image} alt={`Image representing ${tool.name}`} width={500} height={300} layout="responsive" />
                 <h2>{tool.name}</h2>
                 <p>{tool.description}</p>
               </div>

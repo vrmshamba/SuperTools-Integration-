@@ -17,8 +17,7 @@ module.exports = {
   // Include any domains for external images to be used with the Next.js Image component
   images: {
     domains: ['supertools.therundown.ai'],
+    unoptimized: true, // Disable the image optimization API
   },
   // Additional Next.js configuration options can be added here as needed
-  // Configure static HTML export
-  output: 'export',
 };
