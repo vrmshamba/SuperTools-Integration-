@@ -1,5 +1,5 @@
 /* All styles have been temporarily commented out for debugging purposes */
-/*
+
 /* Reset some basic elements */
 body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
   margin: 0;
@@ -17,9 +17,9 @@ body {
 
 /* Style the navigation bar */
 nav {
-  background-color: #101010; /* Darker shade for the navbar */
+  background-color: #333; /* Dark shade for the navbar */
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 0; /* Vertical padding for the navbar */
   text-align: center;
 }
 
@@ -30,13 +30,18 @@ nav ul {
 }
 
 nav li {
-  padding: 0 1rem;
+  padding: 0 2rem; /* Increased horizontal padding for better spacing */
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.5rem 0; /* Vertical padding for the links */
+  transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+nav a:hover {
+  color: #ff9800; /* Orange color for hover state */
 }
 
 /* Style the main content */
@@ -227,11 +232,12 @@ footer p {
 
 /* Ensure all SVG elements are properly sized and scale within their containers */
 svg {
-  max-width: 24px;
-  max-height: 24px;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  vertical-align: middle;
+  max-width: 24px; /* Maximum width for SVG elements to prevent oversized rendering */
+  max-height: 24px; /* Maximum height for SVG elements to prevent oversized rendering */
+  width: auto; /* Width auto for SVG elements to scale proportionally */
+  height: auto; /* Height auto for SVG elements to scale proportionally */
+  display: inline-block; /* Display inline-block for proper alignment with text */
+  vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
 */
+.dummy-rule { visibility: hidden; }
