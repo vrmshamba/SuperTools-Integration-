@@ -55,25 +55,23 @@ main {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(to right, #1a1a1a, #414141);
-  z-index: 10;
-  overflow: visible;
-  position: relative;
+  background: #ffffff; /* Changed to a white background for a clean look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
 
 h1 {
-  font-size: 3rem; /* Increased font size for the headline */
-  color: #ff9800; /* Orange color for the headline for a pop of color */
-  font-weight: bold; /* Bold font for impact */
+  font-size: 2.5rem; /* Adjusted font size for the headline */
+  color: #333333; /* Darker color for better readability */
+  font-weight: 700; /* Bold font for impact */
   margin-bottom: 1rem; /* Spacing after the headline */
-  text-transform: uppercase; /* Uppercase styling for a more dynamic look */
-  text-shadow: 2px 2px 4px #000000; /* Text shadow for depth */
+  text-transform: none; /* Removed uppercase styling for a more professional look */
+  text-shadow: none; /* Removed text shadow for a cleaner appearance */
 }
 
 p {
-  color: #ddd; /* Lighter text for the description for better readability */
+  color: #333; /* Darker text for the description for better contrast against the white background */
   margin-bottom: 1rem; /* Spacing after paragraphs */
-  font-size: 1.2rem; /* Slightly larger font size for readability */
+  font-size: 1.2rem; /* Maintaining the font size for readability */
   line-height: 1.4; /* Increased line height for better text flow */
 }
 
@@ -193,19 +191,42 @@ footer a.linkedin-icon:before {
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
+    padding: 0; /* Remove padding for a cleaner look on small screens */
   }
 
   nav li {
-    padding: 0.5rem 0; /* Less padding for smaller screens */
+    padding: 0.5rem; /* Uniform padding for better spacing on small screens */
   }
 
   main {
-    padding: 1rem;
+    padding: 1rem; /* Reduced padding for more space on small screens */
+    box-shadow: none; /* Remove shadow to simplify the design on small screens */
   }
 
   h1 {
-    font-size: 2rem; /* Smaller font size for smaller screens */
+    font-size: 1.8rem; /* Smaller font size for headlines on small screens */
+    margin-bottom: 0.5rem; /* Reduced spacing after the headline */
   }
+
+  h2 {
+    font-size: 1.3rem; /* Smaller font size for subheadings on small screens */
+  }
+
+  form {
+    padding: 0.5rem; /* Reduced padding around form elements */
+  }
+
+  form input[type="email"], form button {
+    width: auto; /* Allow input and button to size dynamically */
+    padding: 0.5rem; /* Consistent padding for form elements */
+  }
+
+  .category-tag {
+    margin: 0.1rem; /* Reduced margin for category tags */
+    padding: 0.3rem 0.6rem; /* Smaller padding for category tags */
+  }
+
+  /* Additional responsive adjustments can be added as needed */
 }
 
 /* Top Picks Page Styles */
