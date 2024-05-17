@@ -19,7 +19,7 @@ const Home = () => {
       description: 'Description of what Actual AI Tool 2 does and its benefits.'
     },
     {
-      image: '/tool-placeholder-3.jpg',
+      image: '/ai-tool-3.jpg',
       name: 'Actual AI Tool Name 3',
       description: 'Description of what Actual AI Tool 3 does and its benefits.'
     },
@@ -55,7 +55,7 @@ const Home = () => {
             {/* Tool cards will be dynamically generated from a list of tools */}
             {tools.map((tool, index) => (
               <div key={index} className="top-pick-card">
-                <Image src={tool.image} alt={`Image representing ${tool.name}`} width={500} height={300} layout="responsive" />
+                <Image src={tool.image} alt={`Image representing ${tool.name}`} width={500} height={300} />
                 <h2>{tool.name}</h2>
                 <p>{tool.description}</p>
               </div>
