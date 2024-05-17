@@ -44,6 +44,12 @@ nav a:hover {
   color: #ff9800; /* Orange color for hover state */
 }
 
+/* Active link styling */
+nav a.active {
+  color: #ff9800; /* Orange color for the active state */
+  font-weight: bold; /* Bold font for the active link */
+}
+
 /* Style the main content */
 main {
   padding: 2rem;
@@ -239,5 +245,4 @@ svg {
   display: inline-block; /* Display inline-block for proper alignment with text */
   vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
-*/
 .dummy-rule { visibility: hidden; }
