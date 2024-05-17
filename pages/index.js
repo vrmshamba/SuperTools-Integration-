@@ -9,17 +9,17 @@ const Home = () => {
   // Updated data for the tools array with actual image paths
   const tools = [
     {
-      image: '/path-to-actual-tool-image-1.jpg',
+      image: '/tool-placeholder-1.jpg',
       name: 'Actual AI Tool Name 1',
       description: 'Description of what Actual AI Tool 1 does and its benefits.'
     },
     {
-      image: '/path-to-actual-tool-image-2.jpg',
+      image: '/tool-placeholder-2.jpg',
       name: 'Actual AI Tool Name 2',
       description: 'Description of what Actual AI Tool 2 does and its benefits.'
     },
     {
-      image: '/path-to-actual-tool-image-3.jpg',
+      image: '/tool-placeholder-3.jpg',
       name: 'Actual AI Tool Name 3',
       description: 'Description of what Actual AI Tool 3 does and its benefits.'
     },
