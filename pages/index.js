@@ -9,19 +9,19 @@ const Home = () => {
   // Updated data for the tools array with actual image paths
   const tools = [
     {
-      image: '/tool-placeholder-1.jpg',
-      name: 'Actual AI Tool Name 1',
-      description: 'Description of what Actual AI Tool 1 does and its benefits.'
+      image: '/path-to-actual-tool-image-1.jpg',
+      name: 'AI Tool 1',
+      description: 'An AI tool that helps with task 1.'
     },
     {
-      image: '/tool-placeholder-2.jpg',
-      name: 'Actual AI Tool Name 2',
-      description: 'Description of what Actual AI Tool 2 does and its benefits.'
+      image: '/path-to-actual-tool-image-2.jpg',
+      name: 'AI Tool 2',
+      description: 'An AI tool that assists with task 2.'
     },
     {
-      image: '/ai-tool-3.jpg',
-      name: 'Actual AI Tool Name 3',
-      description: 'Description of what Actual AI Tool 3 does and its benefits.'
+      image: '/path-to-actual-tool-image-3.jpg',
+      name: 'AI Tool 3',
+      description: 'An AI tool designed for task 3.'
     },
     // Additional tool objects with actual data will be added here
   ];
@@ -40,7 +40,7 @@ const Home = () => {
               <li><a href="/gpts" className={router.pathname === "/gpts" ? "active" : ""}>GPTs</a></li>
               <li><a href="/top-picks" className={router.pathname === "/top-picks" ? "active" : ""}>Top Picks</a></li>
               <li><a href="/submit" className={router.pathname === "/submit" ? "active" : ""}>Submit</a></li>
-              <li><a href="https://susanngatia.africa/sponsor">Sponsor</a></li>
+              <li><a href="https://susanngatia.africa/sponsor" className={router.pathname === "https://susanngatia.africa/sponsor" ? "active" : ""}>Sponsor</a></li>
             </ul>
             <a href="https://susanngatia.africa/subscribe">
               <div>Join for Free</div>
@@ -66,11 +66,11 @@ const Home = () => {
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms-conditions">Terms & Conditions</a>
           <p>© 2024 susanngatia.africa. All rights reserved.</p>
-          <a href="https://twitter.com/susanngatia">
-            {/* Twitter icon */}
+          <a href="https://twitter.com/susanngatia" className="social-icon">
+            <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://www.linkedin.com/in/susanngatia">
-            {/* LinkedIn icon */}
+          <a href="https://www.linkedin.com/in/susanngatia" className="social-icon">
+            <i className="fab fa-linkedin-in"></i>
           </a>
         </footer>
       </div>
