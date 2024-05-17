@@ -1,6 +1,5 @@
 /* All styles have been temporarily commented out for debugging purposes */
-
-/* Reset some basic elements */
+/*
 body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
   margin: 0;
   padding: 0;
@@ -284,3 +283,4 @@ svg {
   vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
 .dummy-rule { visibility: hidden; }
+*/
