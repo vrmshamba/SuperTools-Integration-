@@ -295,4 +295,7 @@ svg {
   overflow: hidden;
 }
 
-/* Rule removed to prevent hiding elements with a black background */
+/* Rule added to ensure no elements accidentally create a large black shape */
+*::before, *::after {
+  content: none !important;
+}
