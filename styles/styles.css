@@ -289,9 +289,4 @@ svg {
   vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
 
-/* Removed rules that constrained elements to the viewport size, which could cause layout issues */
-
-/* Rule added to ensure no elements accidentally create a large black shape */
-*::before, *::after {
-  content: none !important;
-}
+/* Removed the debugging rule that was hiding content for all pseudo-elements */
