@@ -225,11 +225,11 @@ footer a.social-icon img {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 2rem 0;
-  background-color: #121212; /* Dark background for the top picks container */
+  background-color: #f7f7f7; /* Light background for the top picks container for better contrast */
 }
 
 .top-pick-card {
-  background-color: #1A1A1A; /* Dark background for each top pick card */
+  background-color: #ffffff; /* Light background for each top pick card for better contrast */
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Updated shadow for depth */
@@ -242,14 +242,14 @@ footer a.social-icon img {
 }
 
 .top-pick-card h2 {
-  color: #FFFFFF; /* White text for better contrast on dark background */
+  color: #333333; /* Dark text for better readability on light background */
   margin-bottom: 0.5rem;
   font-size: 1.5rem; /* Larger font size for the tool name */
   font-weight: bold;
 }
 
 .top-pick-card p {
-  color: #CCCCCC; /* Lighter text for the description */
+  color: #666666; /* Darker text for the description for better readability on light background */
   font-size: 1rem;
 }
 
@@ -266,10 +266,8 @@ footer p {
 
 /* Ensure all SVG elements are properly sized and scale within their containers */
 svg {
-  max-width: 24px; /* Maximum width for SVG elements to prevent oversized rendering */
-  max-height: 24px; /* Maximum height for SVG elements to prevent oversized rendering */
-  width: auto; /* Width auto for SVG elements to scale proportionally */
-  height: auto; /* Height auto for SVG elements to scale proportionally */
+  width: 24px; /* Fixed width for SVG elements to prevent oversized rendering */
+  height: 24px; /* Fixed height for SVG elements to prevent oversized rendering */
   display: inline-block; /* Display inline-block for proper alignment with text */
   vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
