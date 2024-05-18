@@ -8,7 +8,8 @@ const Custom404 = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>404: This page could not be found</title>
+        <title>404: Page not found - susanngatia.africa</title>
+        <meta name="description" content="The page you are looking for might have been removed, had its name changed, or is temporarily unavailable." />
         <link rel="preload" href="./_next/static/css/6c14eea6ee3c2181.css" as="style" />
         <link rel="stylesheet" href="./_next/static/css/6c14eea6ee3c2181.css" data-n-g="" />
       </Head>
@@ -22,8 +23,8 @@ const Custom404 = () => {
       <Script src="./_next/static/K78g12PIHtg21l1HmpBQs/_ssgManifest.js" strategy="beforeInteractive" />
       {/* The content below can be customized as needed */}
       <main style={{ padding: '1rem' }}>
-        <h1>Page Not Found</h1>
-        <p>The page you're looking for doesn't seem to exist. Head back <a href="/">home</a> and try again.</p>
+        <h1>Oops! Page Not Found</h1>
+        <p>The page you're looking for doesn't seem to exist. Head back <a href="/">home</a> and try again, or use the search function to find what you need.</p>
       </main>
     </div>
   );
