@@ -90,11 +90,11 @@ const GPTs = () => {
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms-conditions">Terms & Conditions</a>
         <p>Owned by susanngatia.africa</p>
-        <a href="https://twitter.com/susanngatia">
-          {/* Twitter icon will be added here */}
+        <a href="https://twitter.com/susanngatia" className="social-icon">
+          <img src="/icons/twitter.svg" alt="Twitter" />
         </a>
-        <a href="https://www.linkedin.com/in/susanngatia/">
-          {/* LinkedIn icon will be added here */}
+        <a href="https://www.linkedin.com/in/susanngatia/" className="social-icon">
+          <img src="/icons/linkedin.svg" alt="LinkedIn" />
         </a>
       </footer>
     </div>

@@ -52,8 +52,12 @@ export default function TopPicks() {
           <a>Terms & Conditions</a>
         </Link>
         <p>© 2024 susanngatia.africa. All rights reserved.</p>
-        {/* Social media links will be updated to point to susanngatia's profiles */}
-        {/* ... */}
+        <a href="https://twitter.com/susanngatia" className="social-icon">
+          <img src="/icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/susanngatia/" className="social-icon">
+          <img src="/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
       </footer>
     </>
   );

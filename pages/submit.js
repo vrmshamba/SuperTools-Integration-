@@ -32,6 +32,12 @@ export default function Submit() {
           <a>Terms & Conditions</a>
         </Link>
         <p>© 2024 susanngatia.africa. All rights reserved.</p>
+        <a href="https://twitter.com/susanngatia" className="social-icon">
+          <img src="/icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/susanngatia" className="social-icon">
+          <img src="/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
       </footer>
     </>
   );
