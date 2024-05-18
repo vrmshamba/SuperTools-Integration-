@@ -288,7 +288,12 @@ svg {
   vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
 
-/* Removed universal selector rules that could cause layout issues */
+/* Additional CSS to prevent overly large elements and hide black shapes */
+* {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
 
 /* Target any elements with a black background */
 *[style*="background: black"],
