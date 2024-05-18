@@ -290,11 +290,14 @@ svg {
 }
 
 /* Additional CSS to prevent overly large elements and hide black shapes */
+/* The following rules have been removed to prevent constraining all elements to the viewport size, which was causing layout issues */
+/* Removed rules:
 * {
   max-width: 100vw;
   max-height: 100vh;
   overflow: visible;
 }
+*/
 
 /* Rule added to ensure no elements accidentally create a large black shape */
 *::before, *::after {
