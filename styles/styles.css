@@ -1,5 +1,6 @@
 /* All styles have been temporarily commented out for debugging purposes */
 
+/* General styles for body and text elements */
 body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
   margin: 0;
   padding: 0;
@@ -296,6 +297,6 @@ svg {
 }
 
 /* Rule added to ensure no elements accidentally create a large black shape */
-/* *::before, *::after {
+*::before, *::after {
   content: none !important;
-} */
+}
