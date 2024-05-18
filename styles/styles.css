@@ -295,10 +295,4 @@ svg {
   overflow: hidden;
 }
 
-/* Target any elements with a black background */
-*[style*="background: black"],
-*[style*="background-color: black"],
-*[style*="background:#000"],
-*[style*="background-color:#000"] {
-  display: none !important;
-}
+/* Rule removed to prevent hiding elements with a black background */
