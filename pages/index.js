@@ -6,22 +6,21 @@ import { useRouter } from 'next/router';
 const Home = () => {
   const router = useRouter();
 
-  // Updated data for the tools array with actual image paths
   const tools = [
     {
-      image: '/path-to-actual-tool-image-1.jpg',
-      name: 'AI Tool 1',
-      description: 'An AI tool that helps with task 1.'
+      image: '/images/ai-tool-1.jpg',
+      name: 'AI Content Generator',
+      description: 'Generate unique content with advanced AI algorithms.'
     },
     {
-      image: '/path-to-actual-tool-image-2.jpg',
-      name: 'AI Tool 2',
-      description: 'An AI tool that assists with task 2.'
+      image: '/images/ai-tool-2.jpg',
+      name: 'AI Image Enhancer',
+      description: 'Enhance your images with AI-powered editing tools.'
     },
     {
-      image: '/path-to-actual-tool-image-3.jpg',
-      name: 'AI Tool 3',
-      description: 'An AI tool designed for task 3.'
+      image: '/images/ai-tool-3.jpg',
+      name: 'AI Data Analyzer',
+      description: 'Analyze complex data sets with ease using AI.'
     },
     // Additional tool objects with actual data will be added here
   ];
