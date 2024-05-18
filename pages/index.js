@@ -66,10 +66,10 @@ const Home = () => {
           <a href="/terms-conditions">Terms & Conditions</a>
           <p>© 2024 susanngatia.africa. All rights reserved.</p>
           <a href="https://twitter.com/susanngatia" className="social-icon">
-            <img src="/icons/twitter.svg" alt="Twitter" />
+            <img src="/icons/twitter.svg" alt="Twitter" width="24" height="24" />
           </a>
           <a href="https://www.linkedin.com/in/susanngatia" className="social-icon">
-            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+            <img src="/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" />
           </a>
         </footer>
       </div>
