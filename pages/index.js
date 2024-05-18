@@ -8,19 +8,19 @@ const Home = () => {
 
   const tools = [
     {
-      image: '/images/ai-tool-1.jpg',
-      name: 'AI Content Generator',
-      description: 'Generate unique content with advanced AI algorithms.'
+      image: '/images/ai-content-creator.jpg',
+      name: 'AI Content Creator',
+      description: 'Automate your content creation process with our AI-powered content creator, designed to generate high-quality articles, blog posts, and more.'
     },
     {
-      image: '/images/ai-tool-2.jpg',
+      image: '/images/ai-image-enhancer.jpg',
       name: 'AI Image Enhancer',
-      description: 'Enhance your images with AI-powered editing tools.'
+      description: 'Enhance and upscale your images with our state-of-the-art AI image enhancer, perfect for photographers and designers.'
     },
     {
-      image: '/images/ai-tool-3.jpg',
+      image: '/images/ai-data-analyzer.jpg',
       name: 'AI Data Analyzer',
-      description: 'Analyze complex data sets with ease using AI.'
+      description: 'Leverage AI to analyze and interpret complex data sets with our intuitive AI data analyzer tool.'
     },
     // Additional tool objects with actual data will be added here
   ];
