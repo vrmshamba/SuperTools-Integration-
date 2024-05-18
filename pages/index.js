@@ -25,6 +25,13 @@ const Home = () => {
     // Additional tool objects with actual data will be added here
   ];
 
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const filteredTools = searchQuery
+    ? tools.filter((tool) =>
+        tool.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : tools;
+
   return (
     <>
       <Head>
@@ -50,7 +57,29 @@ const Home = () => {
                 </div>
               </li>
               {/* Search icon will be added here */}
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" className="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7l-99.9-99.9c28.4-34.5 45.5-78.7 45.5-127.8 0-111.7-90.9-202.6-202.6-202.6S45.4 103.3 45.4 215S136.3 417.6 248 417.6c49.1 0 93.3-17.1 127.8-45.5l99.9 99.9c4.7 4.7 12.3 4.7 17 0l12.3-12.3c4.6-4.7 4.6-12.3 0-17zM248 369.6c-85.1 0-154.6-69.5-154.6-154.6S162.9 60.4 248 60.4s154.6 69.5 154.6 154.6-69.5 154.6-154.6 154.6z"></path></svg>
+              <li className="search-container">
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  router.push(`/?search=${encodeURIComponent(searchQuery)}`);
+                }}>
+                  <input
+                    type="text"
+                    placeholder="Search tools..."
+                    aria-label="Search tools"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="search-input"
+                  />
+                  <button type="submit" className="search-button" aria-label="Submit search">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" className="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7l-99.9-99.9c28.4-34.5 45.5-78.7 45.5-127.8 0-111.7-90.9-202.6-202.6-202.6S45.4 103.3 45.4 215S136.3 417.6 248 417.6c49.1 0 93.3-17.1 127.8-45.5l99.9 99.9c4.7 4.7 12.3 4.7 17 0l12.3-12.3c4.6-4.7 4.6-12.3 0-17zM248 369.6c-85.1 0-154.6-69.5-154.6-154.6S162.9 60.4 248 60.4s154.6 69.5 154.6 154.6-69.5 154.6-154.6 154.6z"></path></svg>
+                  </button>
+                  {searchQuery && (
+                    <button type="button" className="reset-button" aria-label="Reset search" onClick={() => setSearchQuery('')}>
+                      Reset
+                    </button>
+                  )}
+                </form>
+              </li>
             </ul>
           </nav>
         </header>
@@ -58,7 +87,7 @@ const Home = () => {
           <section className="top-picks-container">
             <h1>⭐ Top Picks</h1>
             {/* Tool cards will be dynamically generated from a list of tools */}
-            {tools.map((tool, index) => (
+            {filteredTools.map((tool, index) => (
               <div key={index} className="top-pick-card">
                 <Image src={tool.image} alt={`Image representing ${tool.name}`} width={500} height={300} />
                 <h2>{tool.name}</h2>
@@ -84,3 +113,5 @@ const Home = () => {
 };
 
 export default Home;
+
+// CSS code removed from this file. It will be placed in the appropriate styles.css file.
