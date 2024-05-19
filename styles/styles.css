@@ -305,20 +305,19 @@ footer p {
 
 /* Ensure all SVG elements are properly sized and scale within their containers */
 svg {
-  width: 24px; /* Fixed width for SVG elements to prevent oversized rendering */
-  height: 24px; /* Fixed height for SVG elements to prevent oversized rendering */
+  max-width: 100%; /* Ensure SVGs do not exceed the width of their container */
+  max-height: 100vh; /* Ensure SVGs do not exceed the height of the viewport */
+  width: auto; /* Allow SVGs to scale down if necessary */
+  height: auto; /* Allow SVGs to scale down if necessary */
   display: inline-block; /* Display inline-block for proper alignment with text */
   vertical-align: middle; /* Align SVGs vertically in the middle of the line */
 }
-
-/* Removed the debugging rule that was hiding content for all pseudo-elements */
 
 /* Styles for the search bar components */
 .search-container {
   display: flex;
   align-items: center;
 }
-
 .search-input {
   padding: 0.5rem;
   margin-right: 0.5rem;
