@@ -1,5 +1,3 @@
-/* All styles have been temporarily commented out for debugging purposes */
-
 /* General styles for body and text elements */
 body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
   margin: 0;
@@ -303,14 +301,14 @@ footer p {
   color: #ccc; /* Lighter text for the footer */
 }
 
-/* Ensure all SVG elements are properly sized and scale within their containers */
+/* Specific styles for the SVG elements */
 svg {
-  max-width: 100%; /* Ensure SVGs do not exceed the width of their container */
-  max-height: 100vh; /* Ensure SVGs do not exceed the height of the viewport */
-  width: auto; /* Allow SVGs to scale down if necessary */
-  height: auto; /* Allow SVGs to scale down if necessary */
-  display: inline-block; /* Display inline-block for proper alignment with text */
-  vertical-align: middle; /* Align SVGs vertically in the middle of the line */
+  max-width: 100%; /* Limit the width to the parent container */
+  max-height: 100vh; /* Limit the height to the viewport height */
+  width: auto; /* Allow SVG to scale down if necessary */
+  height: auto; /* Allow SVG to scale down if necessary */
+  display: block; /* Change display to block to remove any inline behavior */
+  margin: auto; /* Center the SVG horizontally within its container */
 }
 
 /* Styles for the search bar components */
