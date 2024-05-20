@@ -7,17 +7,17 @@ body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
 
 /* Set some default font properties */
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
+  font-family: 'Open Sans', sans-serif; /* Updated font to match susanngatia.africa */
+  color: #4A4A4A; /* Updated text color for better readability */
   line-height: 1.6;
-  background-color: #f7f7f7; /* Light grey background */
+  background-color: #FFFFFF; /* Updated background color to white for a clean look */
 }
 
 /* Style the navigation bar */
 nav {
-  background-color: #333; /* Dark shade for the navbar */
-  color: #fff;
-  padding: 1rem 0; /* Vertical padding for the navbar */
+  background-color: #0A0A0A; /* Updated navbar color to match susanngatia.africa */
+  color: #FFFFFF;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -40,14 +40,14 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff9800; /* Orange color for hover state */
+  color: #EAB543; /* Updated hover color to match susanngatia.africa */
 }
 
 nav a.active {
-  background-color: #ff9800; /* Orange background for the active state */
-  color: #fff; /* White text for the active state */
-  font-weight: bold; /* Bold font for the active link */
-  border-radius: 0.25rem; /* Rounded corners for the active link */
+  background-color: #EAB543; /* Updated active state color to match susanngatia.africa */
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 0.25rem;
 }
 
 /* Dropdown Button */
@@ -194,8 +194,8 @@ form button:hover {
 
 /* Style the footer */
 footer {
-  background-color: #101010; /* Darker shade for the footer */
-  color: #fff;
+  background-color: #0A0A0A; /* Updated footer color to match susanngatia.africa */
+  color: #FFFFFF;
   padding: 1rem;
   text-align: center;
 }
