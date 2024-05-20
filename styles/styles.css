@@ -36,7 +36,18 @@ nav a {
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 0; /* Vertical padding for the links */
-  transition: background-color 0.3s ease; /* Transition for hover effect */
+  transition: color 0.3s ease; /* Transition for color change on hover */
+}
+
+nav a:hover {
+  color: #ff9800; /* Orange color for hover state */
+}
+
+nav a.active {
+  background-color: #ff9800; /* Orange background for the active state */
+  color: #fff; /* White text for the active state */
+  font-weight: bold; /* Bold font for the active link */
+  border-radius: 0.25rem; /* Rounded corners for the active link */
 }
 
 /* Dropdown Button */
@@ -79,12 +90,6 @@ nav a {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* Active link styling */
-nav a.active {
-  color: #ff9800; /* Orange color for the active state */
-  font-weight: bold; /* Bold font for the active link */
 }
 
 /* Style the main content */
