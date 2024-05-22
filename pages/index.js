@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import manufacturingTools from './manufacturing-tools';
 
 const Home = () => {
   const router = useRouter();
@@ -46,20 +47,6 @@ const Home = () => {
       description: 'Description for Health Tool 2.'
     },
     // Additional health tools will be added here
-  ];
-
-  const manufacturingTools = [
-    {
-      image: '/images/manufacturing-tool-1.jpg',
-      name: 'Manufacturing Tool 1',
-      description: 'Description for Manufacturing Tool 1.'
-    },
-    {
-      image: '/images/manufacturing-tool-2.jpg',
-      name: 'Manufacturing Tool 2',
-      description: 'Description for Manufacturing Tool 2.'
-    },
-    // Additional manufacturing tools will be added here
   ];
 
   const publicPolicyEconomicsTools = [
@@ -180,6 +167,18 @@ const Home = () => {
               {mediaTools.map((tool, index) => (
                 <div key={index} className="tool-card">
                   <Image src={tool.image} alt={tool.name} width={250} height={150} />
+                  <h3>{tool.name}</h3>
+                  <p>{tool.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="manufacturing-tools-container">
+            <h2>Manufacturing Tools</h2>
+            <div className="tools-grid">
+              {manufacturingTools.map((tool, index) => (
+                <div key={index} className="tool-card">
+                  <Image src="/images/placeholder-tool-image.jpg" alt={tool.name} width={250} height={150} />
                   <h3>{tool.name}</h3>
                   <p>{tool.description}</p>
                 </div>
