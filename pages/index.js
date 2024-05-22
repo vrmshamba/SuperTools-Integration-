@@ -6,23 +6,102 @@ import { useRouter } from 'next/router';
 const Home = () => {
   const router = useRouter();
 
-  const tools = [
+  const mediaTools = [
     {
-      image: '/images/ai-content-creator.jpg',
-      name: 'AI Content Creator',
-      description: 'Automate your content creation process with our AI-powered content creator, designed to generate high-quality articles, blog posts, and more.'
+      image: '/images/media-tool-1.jpg',
+      name: 'Media Tool 1',
+      description: 'Description for Media Tool 1.'
     },
     {
-      image: '/images/ai-image-enhancer.jpg',
-      name: 'AI Image Enhancer',
-      description: 'Enhance and upscale your images with our state-of-the-art AI image enhancer, perfect for photographers and designers.'
+      image: '/images/media-tool-2.jpg',
+      name: 'Media Tool 2',
+      description: 'Description for Media Tool 2.'
+    },
+    // Additional media tools will be added here
+  ];
+
+  const agricultureTools = [
+    {
+      image: '/images/agriculture-tool-1.jpg',
+      name: 'Agriculture Tool 1',
+      description: 'Description for Agriculture Tool 1.'
     },
     {
-      image: '/images/ai-data-analyzer.jpg',
-      name: 'AI Data Analyzer',
-      description: 'Leverage AI to analyze and interpret complex data sets with our intuitive AI data analyzer tool.'
+      image: '/images/agriculture-tool-2.jpg',
+      name: 'Agriculture Tool 2',
+      description: 'Description for Agriculture Tool 2.'
     },
-    // Additional tool objects with actual data will be added here
+    // Additional agriculture tools will be added here
+  ];
+
+  const healthTools = [
+    {
+      image: '/images/health-tool-1.jpg',
+      name: 'Health Tool 1',
+      description: 'Description for Health Tool 1.'
+    },
+    {
+      image: '/images/health-tool-2.jpg',
+      name: 'Health Tool 2',
+      description: 'Description for Health Tool 2.'
+    },
+    // Additional health tools will be added here
+  ];
+
+  const manufacturingTools = [
+    {
+      image: '/images/manufacturing-tool-1.jpg',
+      name: 'Manufacturing Tool 1',
+      description: 'Description for Manufacturing Tool 1.'
+    },
+    {
+      image: '/images/manufacturing-tool-2.jpg',
+      name: 'Manufacturing Tool 2',
+      description: 'Description for Manufacturing Tool 2.'
+    },
+    // Additional manufacturing tools will be added here
+  ];
+
+  const publicPolicyEconomicsTools = [
+    {
+      image: '/images/public-policy-tool-1.jpg',
+      name: 'Public Policy Tool 1',
+      description: 'Description for Public Policy Tool 1.'
+    },
+    {
+      image: '/images/public-policy-tool-2.jpg',
+      name: 'Public Policy Tool 2',
+      description: 'Description for Public Policy Tool 2.'
+    },
+    // Additional public policy tools will be added here
+  ];
+
+  const dataAnalyticsTools = [
+    {
+      image: '/images/data-analytics-tool-1.jpg',
+      name: 'Data Analytics Tool 1',
+      description: 'Description for Data Analytics Tool 1.'
+    },
+    {
+      image: '/images/data-analytics-tool-2.jpg',
+      name: 'Data Analytics Tool 2',
+      description: 'Description for Data Analytics Tool 2.'
+    },
+    // Additional data analytics tools will be added here
+  ];
+
+  const otherTools = [
+    {
+      image: '/images/other-tool-1.jpg',
+      name: 'Other Tool 1',
+      description: 'Description for Other Tool 1.'
+    },
+    {
+      image: '/images/other-tool-2.jpg',
+      name: 'Other Tool 2',
+      description: 'Description for Other Tool 2.'
+    },
+    // Additional tools for other sectors will be added here
   ];
 
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -94,6 +173,18 @@ const Home = () => {
                 <p>{tool.description}</p>
               </div>
             ))}
+          </section>
+          <section className="media-tools-container">
+            <h2>Media Tools</h2>
+            <div className="tools-grid">
+              {mediaTools.map((tool, index) => (
+                <div key={index} className="tool-card">
+                  <Image src={tool.image} alt={tool.name} width={250} height={150} />
+                  <h3>{tool.name}</h3>
+                  <p>{tool.description}</p>
+                </div>
+              ))}
+            </div>
           </section>
         </main>
         <footer>
