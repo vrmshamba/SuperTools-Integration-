@@ -7,15 +7,15 @@ body, h1, h2, h3, p, ul, li, a, form, input, button, footer {
 
 /* Set some default font properties */
 body {
-  font-family: 'Open Sans', sans-serif; /* Updated font to match susanngatia.africa */
-  color: #4A4A4A; /* Updated text color for better readability */
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF; /* Light text color for better readability on dark background */
   line-height: 1.6;
-  background-color: #FFFFFF; /* Updated background color to white for a clean look */
+  background-color: #121212; /* Dark background color to match Rundown theme */
 }
 
 /* Style the navigation bar */
 nav {
-  background-color: #0A0A0A; /* Updated navbar color to match susanngatia.africa */
+  background-color: #1A1A1A; /* Darker navbar color to match Rundown theme */
   color: #FFFFFF;
   padding: 1rem 0;
   text-align: center;
@@ -194,7 +194,7 @@ form button:hover {
 
 /* Style the footer */
 footer {
-  background-color: #0A0A0A; /* Updated footer color to match susanngatia.africa */
+  background-color: #1A1A1A; /* Darker footer color to match Rundown theme */
   color: #FFFFFF;
   padding: 1rem;
   text-align: center;
