@@ -3,23 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import manufacturingTools from './manufacturing-tools';
+import mediaTools from './media-tools';
 
 const Home = () => {
   const router = useRouter();
-
-  const mediaTools = [
-    {
-      image: '/images/media-tool-1.jpg',
-      name: 'Media Tool 1',
-      description: 'Description for Media Tool 1.'
-    },
-    {
-      image: '/images/media-tool-2.jpg',
-      name: 'Media Tool 2',
-      description: 'Description for Media Tool 2.'
-    },
-    // Additional media tools will be added here
-  ];
 
   const agricultureTools = [
     {
@@ -166,9 +153,16 @@ const Home = () => {
             <div className="tools-grid">
               {mediaTools.map((tool, index) => (
                 <div key={index} className="tool-card">
-                  <Image src={tool.image} alt={tool.name} width={250} height={150} />
-                  <h3>{tool.name}</h3>
-                  <p>{tool.description}</p>
+                  <a href={tool.link} target="_blank" rel="noopener noreferrer">
+                    <Image src={`/images/media-tools/${tool.name.toLowerCase().replace(/ /g, '-')}.jpg`} alt={tool.name} width={250} height={150} />
+                    <h3>{tool.name}</h3>
+                    <p>{tool.description}</p>
+                    <ul>
+                      {tool.benefits.map((benefit, idx) => (
+                        <li key={idx}>{benefit}</li>
+                      ))}
+                    </ul>
+                  </a>
                 </div>
               ))}
             </div>
